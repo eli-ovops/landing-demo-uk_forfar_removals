@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<audit version="0.0.88">
+<site url="https://forfar-removals.co.uk" crawled="20" date="2026-08-29T11:21:44.512Z"/>
+<score overall="36" grade="F">
+ <group name="SEO" score="47" errors="94" warnings="191"/>
+ <group name="Performance" score="32" errors="55" warnings="144"/>
+ <group name="Security" score="45" errors="0" warnings="44"/>
+ <group name="Agents" score="47" errors="0" warnings="31"/>
+ <cat name="Performance" score="32"/>
+ <cat name="Accessibility" score="48"/>
+ <cat name="Core SEO" score="38"/>
+ <cat name="Images" score="38"/>
+ <cat name="Crawlability" score="81"/>
+ <cat name="Security" score="42"/>
+ <cat name="Agent Experience" score="47"/>
+ <cat name="Links" score="53"/>
+ <cat name="Content" score="92"/>
+ <cat name="Mobile" score="90"/>
+ <cat name="URL Structure" score="93"/>
+ <cat name="Analytics" score="100"/>
+ <cat name="E-E-A-T" score="100"/>
+ <cat name="Internationalization" score="100"/>
+ <cat name="Site Integrity" score="100"/>
+ <cat name="Legal Compliance" score="100"/>
+ <cat name="Local SEO" score="100"/>
+ <cat name="Social Media" score="100"/>
+</score>
+<summary passed="1830" warnings="513" failed="149"/>
+<scan-scope origin="cli" crawled="20" max-pages="20" capped="true"/>
+<technologies first-scan="false" added="0" removed="0">
+ <tech name="WordPress" cat="cms" version="7.1"/>
+ <tech name="Google Analytics 4" cat="analytics"/>
+ <tech name="LiteSpeed" cat="web-server"/>
+ <tech name="Tawk.to" cat="chat"/>
+ <tech name="Google Fonts" cat="font"/>
+ <tech name="Underscore.js" cat="framework"/>
+ <tech name="Swiper" cat="widget"/>
+ <tech name="reCAPTCHA" cat="security"/>
+ <tech name="Gravity Forms" cat="widget"/>
+</technologies>
+<issues>
+ <rule id="crawl/sitemap-exists" severity="error" category="Crawlability" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/crawl/sitemap-exists">
+  No XML sitemap found
+ </rule>
+ <rule id="core/h1" severity="error" category="Core SEO" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/core/h1">
+  No H1 tag found; Multiple HN tags found (N)
+  Pages (5/15): /about-us/, /additional-services/, /commercial/, /contact-us/, /domestic/
+  Items (5/15):
+   - /commercial/ (No H1 tag found)
+   - /contact-us/ (No H1 tag found)
+   - /domestic/ (No H1 tag found)
+   - /free-quote (No H1 tag found)
+   - /free-quote/ (No H1 tag found)
+ </rule>
+ <rule id="core/meta-description" severity="error" category="Core SEO" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/core/meta-description">
+  Missing meta description
+  Pages (5/20): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+ </rule>
+ <rule id="a11y/duplicate-id-aria" severity="error" category="Accessibility" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/a11y/duplicate-id-aria">
+  1 problematic ID(s) in ARIA attributes
+  Pages (2): /free-quote, /free-quote/
+  Items (1):
+   - &quot;input_1_6_date_format&quot; (2 occurrences)
+ </rule>
+ <rule id="a11y/aria-command-name" severity="error" category="Accessibility" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/a11y/aria-command-name">
+  N command element(s) without accessible names
+  Pages (5/20): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+  Items (5/11):
+   - a[href=&quot;#&quot;]
+   - a[href=&quot;https://forfar-removals.co.uk&quot;]
+   - a[href=&quot;https://linkprotect.cudasvc.co...&quot;]
+   - a[href=&quot;https://linkprotect.cudasvc.co...&quot;]
+   - a[href=&quot;https://linkprotect.cudasvc.co...&quot;]
+ </rule>
+ <rule id="a11y/duplicate-id-active" severity="error" category="Accessibility" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/a11y/duplicate-id-active">
+  142 duplicate ID(s) on focusable elements
+  Pages (2): /free-quote, /free-quote/
+  Items (5/10):
+   - &quot;gforms_calendar_icon_input_1_6&quot; (2 occurrences)
+   - &quot;input_1_13&quot; (2 occurrences)
+   - &quot;input_1_139&quot; (2 occurrences)
+   - &quot;input_1_144&quot; (2 occurrences)
+   - &quot;input_1_1_3&quot; (2 occurrences)
+ </rule>
+ <rule id="core/twitter-cards" severity="info" category="Core SEO" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/core/twitter-cards">
+  No Twitter card or Open Graph tags for Twitter sharing
+  Pages (5/20): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+ </rule>
+ <rule id="security/third-party-cookies" severity="info" category="Security" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/security/third-party-cookies">
+  1 known tracking domain(s) detected
+  Pages (5/20): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+  Items (1):
+   - www.googletagmanager.com (script)
+ </rule>
+ <rule id="images/optimized" severity="info" category="Images" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/images/optimized">
+  Images may not be optimized - consider using an image CDN
+  Pages (5/20): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+ </rule>
+ <rule id="perf/inp-hints" severity="info" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/inp-hints">
+  N blocking scripts (consider async/defer)
+  Pages (5/20): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+  Items (5/20):
+   - / (19 blocking scripts (consider async/defer))
+   - /about-us/ (19 blocking scripts (consider async/defer))
+   - /additional-services/ (19 blocking scripts (consider async/defer))
+   - /commercial/ (19 blocking scripts (consider async/defer))
+   - /contact-us/ (19 blocking scripts (consider async/defer))
+ </rule>
+ <rule id="perf/source-maps" severity="info" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/source-maps">
+  1 potential source map(s) detected
+  Pages (5/21): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+  Items (1):
+   - /wp-content/uploads/hummingbird-assets/vegas.min.js.map (from https://forfar-removals.co.uk/wp-content/uploads/hummingbird-assets/553b56d2a75a423fff548afb54d52252.js)
+ </rule>
+ <rule id="legal/subprocessor-disclosure" severity="info" category="Legal Compliance" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/legal/subprocessor-disclosure">
+  No sub-processor / data-processing (DPA) disclosure found
+ </rule>
+ <rule id="ax/llms-txt" severity="info" category="Agent Experience" group="ai" status="warn" docs="https://docs.squirrelscan.com/rules/ax/llms-txt">
+  No /llms.txt found — consider adding one so AI agents can discover your key content
+ </rule>
+ <rule id="ax/markdown-response" severity="info" category="Agent Experience" group="ai" status="warn" docs="https://docs.squirrelscan.com/rules/ax/markdown-response">
+  No Markdown response — consider honoring Accept: text/markdown or publishing a .md variant so agents get clean content
+ </rule>
+ <rule id="crawl/canonical-chain" severity="warning" category="Crawlability" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/crawl/canonical-chain">
+  Page redirects before content is served
+  Pages (2): /free-quote, /self-storage-terms
+  Items (2):
+   - /free-quote (https://forfar-removals.co.uk/free-quote (301) → https://forfar-removals.co.uk/free-quote/ (200)) [finalUrl: https://forfar-removals.co.uk/free-quote/, chain: {&quot;sourceUrl&quot;:&quot;https://forfar-removals.co.uk/free-quote&quot;,&quot;finalUrl&quot;:&quot;https://forfar-removals.co.uk/free-quote/&quot;,&quot;hops&quot;:[{&quot;url&quot;:&quot;https://forfar-removals.co.uk/free-quote&quot;,&quot;statusCode&quot;:301,&quot;type&quot;:&quot;http&quot;…]
+   - /self-storage-terms (https://forfar-removals.co.uk/self-storage-terms (301) → https://forfar-removals.co.uk/self-storage-terms/ (200)) [finalUrl: https://forfar-removals.co.uk/self-storage-terms/, chain: {&quot;sourceUrl&quot;:&quot;https://forfar-removals.co.uk/self-storage-terms&quot;,&quot;finalUrl&quot;:&quot;https://forfar-removals.co.uk/self-storage-terms/&quot;,&quot;hops&quot;:[{&quot;url&quot;:&quot;https://forfar-removals.co.uk/self-storage-terms&quot;,&quot;statu…]
+ </rule>
+ <rule id="core/meta-title" severity="warning" category="Core SEO" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/core/meta-title">
+  Title too short
+  Pages (5/9): /about-us/, /commercial/, /contact-us/, /domestic/, /free-quote
+  Items (5/9):
+   - /about-us/ (About Us – Forfar Removals (26 chars))
+   - /commercial/ (Commercial – Forfar Removals (28 chars))
+   - /contact-us/ (Contact Us – Forfar Removals (28 chars))
+   - /domestic/ (Domestic – Forfar Removals (26 chars))
+   - /free-quote (Free Quote – Forfar Removals (28 chars))
+ </rule>
+ <rule id="core/og-tags" severity="warning" category="Core SEO" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/core/og-tags">
+  Missing og:description; Missing og:image - social shares will lack imagery; Missing og:title
+  Pages (5/20): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+ </rule>
+ <rule id="core/title-unique" severity="warning" category="Core SEO" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/core/title-unique">
+  1 duplicate title(s) affecting 2 pages
+  Pages (2): /free-quote, /free-quote/
+  Items (1):
+   - free quote – forfar removals (&quot;free quote – forfar removals...&quot; (2 pages)) [pageCount: 2] (from: /free-quote, /free-quote/)
+ </rule>
+ <rule id="security/csp" severity="warning" category="Security" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/security/csp">
+  No Content-Security-Policy header
+ </rule>
+ <rule id="security/hsts" severity="warning" category="Security" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/security/hsts">
+  Missing Strict-Transport-Security header
+ </rule>
+ <rule id="security/sri" severity="warning" category="Security" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/security/sri">
+  N cross-origin resources without Subresource Integrity
+  Pages (5/28): /, https://fonts.googleapis.com/css?family=Kumbh+Sans:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto, https://fonts.googleapis.com/css?family=Lato:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto, https://fonts.googleapis.com/css?family=Open+Sans:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto, https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto
+  Items (5/8):
+   - https://fonts.googleapis.com/css?family=Kumbh+Sans:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto (stylesheet)
+   - https://fonts.googleapis.com/css?family=Lato:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto (stylesheet)
+   - https://fonts.googleapis.com/css?family=Open+Sans:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto (stylesheet)
+   - https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto (stylesheet)
+   - https://fonts.googleapis.com/css?family=Raleway:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto (stylesheet)
+ </rule>
+ <rule id="security/x-frame-options" severity="warning" category="Security" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/security/x-frame-options">
+  No clickjacking protection
+ </rule>
+ <rule id="security/form-captcha" severity="warning" category="Security" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/security/form-captcha">
+  2 public form(s) without CAPTCHA
+  Pages (2): /free-quote, /free-quote/
+  Items (2):
+   - #gform_1
+   - #gform_1
+ </rule>
+ <rule id="security/new-tab" severity="warning" category="Security" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/security/new-tab">
+  N external link(s) missing rel=&quot;noopener&quot;
+  Pages (5/31): /, https://www.fsb.org.uk, https://www.scottishguildofremovers.co.uk/, /additional-services/, /commercial/
+  Items (5/13):
+   - https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fwww.ngrs.co.uk%2f&amp;c=E,1,DYcB_Aw_z6-AtYSX8mNrTNY1UQQ4yR19S-1cbD4ww7PPr97zxXOeQ3hj1m0iPxA4TiVJbk3dmKKTWEaFdXjToJTOE2C8g7aFAw__i4w5KzYejwILATYEgKXiOJ8,&amp;typo=1
+   - https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fwww.ngrs.co.uk%2fombudsman-scheme&amp;c=E,1,xKs03BIEbbSKBw0fwQO9D7n6rpM5etNeLyJTBJ5n-nZy982cBD7-c1BlM4idddiuyNQxdoVdo3GGWRMGBL_SOE5IT1-lSLeubIxMf7p_Lo1h9iKq7Yg,&amp;typo=1
+   - https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fwww.ngrs.co.uk%2fombudsman-scheme&amp;c=E,1,xKs03BIEbbSKBw0fwQO9D7n6rpM5etNeLyJTBJ5n-nZy982cBD7-c1BlM4idddiuyNQxdoVdo3GGWRMGBL_SOE5IT1-lSLeubIxMf7p_Lo1h9iKq7Yg,&amp;typo=1
+   - https://linkprotect.cudasvc.com/url?a=https%3a%2f%2flapada.org%2f&amp;c=E,1,PZioqbEEpoY1LIiX_iEmwQLery_gDiPnDtq1iZhsxNpeotW89d2Ncdt_rwL0t7xTOgb-q6u3tXSQKX-TY9EmGuu6R-ASsFyT0cS6SSWQLdoufyTGApWFRdSOkGxP&amp;typo=1
+   - https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fwww.removalapproval.com%2f&amp;c=E,1,X032oaoaLwZBz4opVzc6kdsiKnjL6j3tkgg9N2OzhCZ2LktbfPBqjNFMWP3ZZ-8uPBKRJfUVVMUdHQ6rblau1LbrO0his7dVdfQicUi-aueDwTKFlzowqw9QHSzH&amp;typo=1
+ </rule>
+ <rule id="links/broken-external-links" severity="warning" category="Links" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/links/broken-external-links">
+  1 broken external link(s): 1 failed
+  Pages (1): /about-us/
+  Items (1):
+   - https://lapada.org/ (https://lapada.org/ (Error: timeout)) [error: timeout] (from: /about-us/)
+ </rule>
+ <rule id="links/https-downgrade" severity="warning" category="Links" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/links/https-downgrade">
+  1 link(s) downgrade to HTTP
+  Pages (5): http://www.ico.org.uk/, http://www.ngrs.co.uk/, /about-us/, /privacy-policy/, /removals/
+  Items (2):
+   - http://www.ico.org.uk/
+   - http://www.ngrs.co.uk/
+ </rule>
+ <rule id="links/anchor-text" severity="warning" category="Links" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/links/anchor-text">
+  N link(s) have empty anchor text
+  Pages (5/23): /, https://www.fsb.org.uk/, /additional-services/, /commercial/, /contact-us/
+  Items (5/8):
+   - https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fwww.ngrs.co.uk%2f&amp;c=E,1,DYcB_Aw_z6-AtYSX8mNrTNY1UQQ4yR19S-1cbD4ww7PPr97zxXOeQ3hj1m0iPxA4TiVJbk3dmKKTWEaFdXjToJTOE2C8g7aFAw__i4w5KzYejwILATYEgKXiOJ8,&amp;typo=1 | &lt;a href=&quot;https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fwww.ngrs.co.uk%2f&amp;c=E,1,DYcB_Aw_z6-AtYSX8mNrTNY1UQQ4yR19S-1c...
+   - https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fwww.ngrs.co.uk%2fombudsman-scheme&amp;c=E,1,xKs03BIEbbSKBw0fwQO9D7n6rpM5etNeLyJTBJ5n-nZy982cBD7-c1BlM4idddiuyNQxdoVdo3GGWRMGBL_SOE5IT1-lSLeubIxMf7p_Lo1h9iKq7Yg,&amp;typo=1 | &lt;a href=&quot;https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fwww.ngrs.co.uk%2fombudsman-scheme&amp;c=E,1,xKs03BIEbbSKBw0fwQO9...
+   - https://linkprotect.cudasvc.com/url?a=https%3a%2f%2flapada.org%2f&amp;c=E,1,PZioqbEEpoY1LIiX_iEmwQLery_gDiPnDtq1iZhsxNpeotW89d2Ncdt_rwL0t7xTOgb-q6u3tXSQKX-TY9EmGuu6R-ASsFyT0cS6SSWQLdoufyTGApWFRdSOkGxP&amp;typo=1 | &lt;a href=&quot;https://linkprotect.cudasvc.com/url?a=https%3a%2f%2flapada.org%2f&amp;c=E,1,PZioqbEEpoY1LIiX_iEmwQLery_gDiPnDtq1iZh...
+   - https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fwww.removalapproval.com%2f&amp;c=E,1,X032oaoaLwZBz4opVzc6kdsiKnjL6j3tkgg9N2OzhCZ2LktbfPBqjNFMWP3ZZ-8uPBKRJfUVVMUdHQ6rblau1LbrO0his7dVdfQicUi-aueDwTKFlzowqw9QHSzH&amp;typo=1 | &lt;a href=&quot;https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fwww.removalapproval.com%2f&amp;c=E,1,X032oaoaLwZBz4opVzc6kdsiKn...
+   - https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fwww.sepa.org.uk%2f&amp;c=E,1,Y4ZTHh4tKTgy_--7Mp6q8-fmKGKic6rEmNhXQkuUDSDJC4McJAIxu5W1Jjv2qGnwj2huwSuzQzJw4Fvp4wppQGsPgYco-HZrV529HHgy&amp;typo=1 | &lt;a href=&quot;https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fwww.sepa.org.uk%2f&amp;c=E,1,Y4ZTHh4tKTgy_--7Mp6q8-fmKGKic6rEmN...
+ </rule>
+ <rule id="links/no-contextual-inbound" severity="warning" category="Links" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/links/no-contextual-inbound">
+  1 page(s) are linked only from sitewide chrome
+  Pages (1): /about-us/
+  Items (1):
+   - /about-us/
+ </rule>
+ <rule id="links/redirect-chains" severity="warning" category="Links" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/links/redirect-chains">
+  2 link target(s) point to redirecting URLs; 2 page(s) redirect to another URL
+  Pages (5/20): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+  Items (4):
+   - /free-quote (https://forfar-removals.co.uk/free-quote (301) → https://forfar-removals.co.uk/free-quote/ (200)) [targetUrl: https://forfar-removals.co.uk/free-quote/, chain: {&quot;sourceUrl&quot;:&quot;https://forfar-removals.co.uk/free-quote&quot;,&quot;finalUrl&quot;:&quot;https://forfar-removals.co.uk/free-quote/&quot;,&quot;hops&quot;:[{&quot;url&quot;:&quot;https://forfar-removals.co.uk/free-quote&quot;,&quot;statusCode&quot;:301,&quot;type&quot;:&quot;http&quot;…] (from: /packaging/)
+   - /self-storage-terms (https://forfar-removals.co.uk/self-storage-terms (301) → https://forfar-removals.co.uk/self-storage-terms/ (200)) [targetUrl: https://forfar-removals.co.uk/self-storage-terms/, chain: {&quot;sourceUrl&quot;:&quot;https://forfar-removals.co.uk/self-storage-terms&quot;,&quot;finalUrl&quot;:&quot;https://forfar-removals.co.uk/self-storage-terms/&quot;,&quot;hops&quot;:[{&quot;url&quot;:&quot;https://forfar-removals.co.uk/self-storage-terms&quot;,&quot;statu…] (from: /, /about-us/, /additional-services/, /commercial/, /contact-us/; +15 more)
+   - /free-quote (https://forfar-removals.co.uk/free-quote (301) → https://forfar-removals.co.uk/free-quote/ (200)) [targetUrl: https://forfar-removals.co.uk/free-quote/, chain: {&quot;sourceUrl&quot;:&quot;https://forfar-removals.co.uk/free-quote&quot;,&quot;finalUrl&quot;:&quot;https://forfar-removals.co.uk/free-quote/&quot;,&quot;hops&quot;:[{&quot;url&quot;:&quot;https://forfar-removals.co.uk/free-quote&quot;,&quot;statusCode&quot;:301,&quot;type&quot;:&quot;http&quot;…]
+   - /self-storage-terms (https://forfar-removals.co.uk/self-storage-terms (301) → https://forfar-removals.co.uk/self-storage-terms/ (200)) [targetUrl: https://forfar-removals.co.uk/self-storage-terms/, chain: {&quot;sourceUrl&quot;:&quot;https://forfar-removals.co.uk/self-storage-terms&quot;,&quot;finalUrl&quot;:&quot;https://forfar-removals.co.uk/self-storage-terms/&quot;,&quot;hops&quot;:[{&quot;url&quot;:&quot;https://forfar-removals.co.uk/self-storage-terms&quot;,&quot;statu…]
+ </rule>
+ <rule id="content/duplicate-title" severity="warning" category="Content" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/content/duplicate-title">
+  1 duplicate title(s) found across 2 pages
+  Pages (2): /free-quote, /free-quote/
+  Items (1):
+   - free quote – forfar removals (&quot;free quote – forfar removals...&quot; (2 pages)) [pageCount: 2] (from: /free-quote, /free-quote/)
+ </rule>
+ <rule id="content/heading-hierarchy" severity="warning" category="Content" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/content/heading-hierarchy">
+  1 empty heading(s) found
+  Pages (1): /self-storage/
+  Items (1):
+   - /self-storage/ (1 empty heading(s) found)
+ </rule>
+ <rule id="content/keyword-stuffing" severity="warning" category="Content" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/content/keyword-stuffing">
+  1 word(s) may be overused
+  Pages (3): /contact-us/, /cookie-policy/, /privacy-policy/
+  Items (3):
+   - cookies (&quot;cookies&quot; (4.5%)) [count: 30, density: 4.545454545454546]
+   - data (&quot;data&quot; (4.0%)) [count: 75, density: 4.012841091492777]
+   - removals (&quot;removals&quot; (4.2%)) [count: 10, density: 4.23728813559322]
+ </rule>
+ <rule id="content/word-count" severity="warning" category="Content" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/content/word-count">
+  Thin content: 292 words (min 300)
+  Pages (1): /contact-us/
+  Items (1):
+   - /contact-us/ (Thin content: 292 words (min 300))
+ </rule>
+ <rule id="images/image-file-size" severity="warning" category="Images" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/images/image-file-size">
+  2 image(s) exceed 200.0 KB
+  Pages (2): /courier-delivery/, /property-clearance/
+  Items (2):
+   - /wp-content/uploads/2022/06/courier-delivery2-768x919.png [sizeBytes: 229961, size: 224.6 KB, status: 200, contentType: image/png] (from: /courier-delivery/)
+   - /wp-content/uploads/2022/11/ClearanceGradient1.png [sizeBytes: 537994, size: 525.4 KB, status: 200, contentType: image/png] (from: /property-clearance/)
+ </rule>
+ <rule id="images/alt-text" severity="warning" category="Images" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/images/alt-text">
+  N image(s) missing alt text
+  Pages (5/50): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+  Items (5/851):
+   - /wp-content/plugins/elementor/assets/images/placeholder.png
+   - /wp-content/plugins/elementor/assets/images/placeholder.png
+   - /wp-content/plugins/elementor/assets/images/placeholder.png
+   - /wp-content/plugins/elementor/assets/images/placeholder.png
+   - /wp-content/plugins/elementor/assets/images/placeholder.png
+ </rule>
+ <rule id="images/offscreen-lazy" severity="warning" category="Images" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/images/offscreen-lazy">
+  N below-fold image(s) without lazy loading
+  Pages (5/20): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+  Items (5/25):
+   - AngusTrader-230h2.jpg
+   - ClearanceGradient1.png
+   - Clients-Love_img-2-1.jpeg
+   - Clients-Love_img-3-1.jpeg
+   - FSB.jpg
+ </rule>
+ <rule id="images/dimensions" severity="warning" category="Images" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/images/dimensions">
+  N image(s) missing width/height (causes CLS)
+  Pages (5/27): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+  Items (5/818):
+   - /wp-content/plugins/elementor/assets/images/placeholder.png | &lt;img src=&quot;https://forfar-removals.co.uk/wp-content/plugins/elementor/assets/images/placeholder.png&quot; alt=&quot;&quot;&gt;
+   - /wp-content/plugins/elementor/assets/images/placeholder.png | &lt;img src=&quot;https://forfar-removals.co.uk/wp-content/plugins/elementor/assets/images/placeholder.png&quot; alt=&quot;&quot;&gt;
+   - /wp-content/plugins/elementor/assets/images/placeholder.png | &lt;img src=&quot;https://forfar-removals.co.uk/wp-content/plugins/elementor/assets/images/placeholder.png&quot; alt=&quot;&quot;&gt;
+   - /wp-content/plugins/elementor/assets/images/placeholder.png | &lt;img src=&quot;https://forfar-removals.co.uk/wp-content/plugins/elementor/assets/images/placeholder.png&quot; alt=&quot;&quot;&gt;
+   - /wp-content/plugins/elementor/assets/images/placeholder.png | &lt;img src=&quot;https://forfar-removals.co.uk/wp-content/plugins/elementor/assets/images/placeholder.png&quot; alt=&quot;&quot;&gt;
+ </rule>
+ <rule id="perf/js-file-size" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/js-file-size">
+  1 JS file(s) exceed 250.0 KB
+  Pages (5/20): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+  Items (1):
+   - /wp-content/uploads/hummingbird-assets/553b56d2a75a423fff548afb54d52252.js [sizeBytes: 266141, size: 259.9 KB, status: 200, contentType: text/javascript] (from: /, /about-us/, /additional-services/, /commercial/, /contact-us/; +15 more)
+ </rule>
+ <rule id="perf/lcp-hints" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/lcp-hints">
+  1 likely-LCP image loaded without preload
+  Pages (5/20): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+  Items (5/20):
+   - / (1 likely-LCP image loaded without preload)
+   - /about-us/ (1 likely-LCP image loaded without preload)
+   - /additional-services/ (1 likely-LCP image loaded without preload)
+   - /commercial/ (1 likely-LCP image loaded without preload)
+   - /contact-us/ (1 likely-LCP image loaded without preload)
+ </rule>
+ <rule id="perf/ttfb" severity="warning" category="Performance" group="performance" status="fail" docs="https://docs.squirrelscan.com/rules/perf/ttfb">
+  Very slow server response (Nms)
+  Pages (5/20): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+  Items (5/20):
+   - / (Very slow server response (3865ms))
+   - /about-us/ (Very slow server response (3467ms))
+   - /additional-services/ (Very slow server response (2924ms))
+   - /commercial/ (Very slow server response (3873ms))
+   - /contact-us/ (Very slow server response (4169ms))
+ </rule>
+ <rule id="perf/cls-hints" severity="warning" category="Performance" group="performance" status="fail" docs="https://docs.squirrelscan.com/rules/perf/cls-hints">
+  1 iframe(s) without dimensions; N image(s) without width/height (CLS risk); 4 image(s) without width/height (CLS risk)
+  Pages (5/27): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+  Items (5/821):
+   - data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+   - data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+   - data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+   - data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+   - data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+ </rule>
+ <rule id="perf/dom-size" severity="warning" category="Performance" group="performance" status="fail" docs="https://docs.squirrelscan.com/rules/perf/dom-size">
+  DOM depth excessive (N levels); Element with N children found; Excessive DOM size (N nodes)
+  Pages (5/20): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+  Items (5/49):
+   - / (DOM depth excessive (58 levels))
+   - /additional-services/ (DOM depth excessive (58 levels))
+   - /commercial/ (DOM depth excessive (58 levels))
+   - /contact-us/ (DOM depth excessive (38 levels))
+   - /courier-delivery/ (DOM depth excessive (58 levels))
+ </rule>
+ <rule id="perf/total-byte-weight" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/total-byte-weight">
+  Total tracked resources: 3482KB (heavy page)
+ </rule>
+ <rule id="perf/bad-caching" severity="warning" category="Performance" group="performance" status="fail" docs="https://docs.squirrelscan.com/rules/perf/bad-caching">
+  20/20 pages lack a caching freshness lifetime; 20/20 pages lack an ETag or Last-Modified validator
+  Pages (5): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+ </rule>
+ <rule id="perf/critical-request-chains" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/critical-request-chains">
+  N critical request chain(s) found
+  Pages (5/20): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+  Items (5/11):
+   - CSS: https://forfar-removals.co.uk/wp-content/uploads/elementor/css/custom-frontend.min.css
+   - CSS: https://forfar-removals.co.uk/wp-content/uploads/elementor/css/post-320.css
+   - CSS: https://forfar-removals.co.uk/wp-content/uploads/elementor/css/post-360.css
+   - CSS: https://forfar-removals.co.uk/wp-content/uploads/hummingbird-assets/05dbdd181a455fd0a849ed92229da4d9.css
+   - CSS: https://forfar-removals.co.uk/wp-content/uploads/hummingbird-assets/23e00b8485023647475c068a40aad4fc.css
+ </rule>
+ <rule id="perf/duplicate-js" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/duplicate-js">
+  2 library(s) loaded multiple times
+  Pages (3): /free-quote, /free-quote/, /packaging/
+  Items (2):
+   - core (2x)
+   - js (2x)
+ </rule>
+ <rule id="perf/font-delivery" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/font-delivery">
+  N render-blocking third-party font stylesheet(s) in the critical path
+  Pages (5/27): /, https://fonts.googleapis.com/css?family=Kumbh+Sans:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto, https://fonts.googleapis.com/css?family=Lato:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto, https://fonts.googleapis.com/css?family=Open+Sans:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto, https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto
+  Items (5/7):
+   - https://fonts.googleapis.com/css?family=Kumbh+Sans:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto
+   - https://fonts.googleapis.com/css?family=Lato:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto
+   - https://fonts.googleapis.com/css?family=Open+Sans:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto
+   - https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto
+   - https://fonts.googleapis.com/css?family=Raleway:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=auto
+ </rule>
+ <rule id="perf/lazy-above-fold" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/lazy-above-fold">
+  2 above-fold image(s) with lazy loading
+  Pages (3): /about-us/, /wp-content/uploads/2022/07/Team1-cropped.jpg, /wp-content/uploads/2022/08/About-Van-Field-750.jpg
+  Items (2):
+   - /wp-content/uploads/2022/07/Team1-cropped.jpg
+   - /wp-content/uploads/2022/08/About-Van-Field-750.jpg
+ </rule>
+ <rule id="perf/unminified-js" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/unminified-js">
+  N JavaScript file(s) appear unminified
+  Pages (5/20): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+  Items (5):
+   - 553b56d2a75a423fff548afb54d52252.js (259.9KB, ~83.4KB savings) [reason: 8 comments]
+   - 7fe2d903c4ca1c95931d6a3ed015ecc3.js (100.6KB, ~15.2KB savings) [reason: 4 comments]
+   - banner.js (77.7KB, ~32.9KB savings) [reason: 14 comments]
+   - inline script (4.5KB, ~0.8KB savings) [reason: long variable names, excessive whitespace]
+   - lib-postcss.js (50.3KB, ~41.2KB savings) [reason: 4 comments]
+ </rule>
+ <rule id="perf/cache-headers" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/cache-headers">
+  No caching headers found
+  Pages (5/20): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+ </rule>
+ <rule id="perf/unminified-css" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/unminified-css">
+  2 CSS file(s) appear unminified
+  Pages (1): /packaging/
+  Items (2):
+   - inline style (4.8KB, ~0.2KB savings) [reason: 8 comments]
+   - inline style (4.8KB, ~0.2KB savings) [reason: 8 comments]
+ </rule>
+ <rule id="a11y/autocomplete-tokens" severity="warning" category="Accessibility" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/a11y/autocomplete-tokens">
+  2 field(s) carry the wrong autocomplete token, 14 carry none; N identified field(s) missing an autocomplete token
+  Pages (4): /contact-us/, /free-quote, /free-quote/, /packaging/
+  Items (5/29):
+   - input#input_1_13 (postal code field has no autocomplete token (expected &quot;postal-code&quot;)) | &lt;input name=&quot;input_13&quot; id=&quot;input_1_13&quot; type=&quot;text&quot; value=&quot;&quot; class=&quot;large&quot; aria-required=&quot;true&quot; aria-invalid=&quot;false&quot;&gt; [reason: missing, purpose: postal code, expected: postal-code]
+   - input#input_1_13 (postal code field has no autocomplete token (expected &quot;postal-code&quot;)) | &lt;input name=&quot;input_13&quot; id=&quot;input_1_13&quot; type=&quot;text&quot; value=&quot;&quot; class=&quot;large&quot; aria-required=&quot;true&quot; aria-invalid=&quot;false&quot;&gt; [reason: missing, purpose: postal code, expected: postal-code]
+   - input#input_1_139 (street address field has no autocomplete token (expected &quot;street-address&quot;)) | &lt;input name=&quot;input_139&quot; id=&quot;input_1_139&quot; type=&quot;text&quot; value=&quot;&quot; class=&quot;large&quot; aria-required=&quot;true&quot; aria-invalid=&quot;false&quot;&gt; [reason: missing, purpose: street address, expected: street-address]
+   - input#input_1_139 (street address field has no autocomplete token (expected &quot;street-address&quot;)) | &lt;input name=&quot;input_139&quot; id=&quot;input_1_139&quot; type=&quot;text&quot; value=&quot;&quot; class=&quot;large&quot; aria-required=&quot;true&quot; aria-invalid=&quot;false&quot;&gt; [reason: missing, purpose: street address, expected: street-address]
+   - input#input_1_14 (street address field has no autocomplete token (expected &quot;street-address&quot;)) | &lt;input name=&quot;input_14&quot; id=&quot;input_1_14&quot; type=&quot;text&quot; value=&quot;&quot; class=&quot;large&quot; placeholder=&quot;New Address, Area, Storage, Self Storage etc. If unknown, please state unknown.&quot; aria-required=&quot;true&quot; aria-inval… [reason: missing, purpose: street address, expected: street-address]
+ </rule>
+ <rule id="a11y/color-contrast" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/color-contrast">
+  N potential color contrast issue(s)
+  Pages (5/20): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+  Items (5/19):
+   - CSS rule &quot;.costpricedescription...&quot;: light gray text color
+   - CSS rule &quot;/*Option to add custom CSS */....&quot;: light gray text color
+   - Light gray text: 4 instance(s)
+   - Very light text color: 10 instance(s)
+   - Very light text color: 11 instance(s)
+ </rule>
+ <rule id="a11y/empty-heading" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/empty-heading">
+  1 empty heading(s) found
+  Pages (1): /self-storage/
+  Items (1):
+   - h4
+ </rule>
+ <rule id="a11y/form-field-multiple-labels" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/form-field-multiple-labels">
+  244 input(s) with multiple labels
+  Pages (2): /free-quote, /free-quote/
+  Items (5/244):
+   - input_1.3 (2 labels)
+   - input_1.3 (2 labels)
+   - input_1.6 (2 labels)
+   - input_1.6 (2 labels)
+   - input_100 (2 labels)
+ </rule>
+ <rule id="a11y/heading-order" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/heading-order">
+  1 heading level skip(s) detected
+  Pages (5): /, /about-us/, /cookie-policy/, /packaging/, /self-storage/
+  Items (2):
+   - H3 after H1
+   - H4 after H2
+ </rule>
+ <rule id="a11y/identical-links-same-purpose" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/identical-links-same-purpose">
+  1 link text(s) lead to different destinations
+  Pages (3): /, /about-us/, /packaging/
+  Items (3):
+   - &quot;01307 468478&quot; → 2 different URLs
+   - &quot;angus trusted trader&quot; → 2 different URLs
+   - &quot;learn more&quot; → 6 different URLs
+ </rule>
+ <rule id="a11y/input-types" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/input-types">
+  N multi-field form(s) set no enterkeyhint; 2 field(s) use type=&quot;text&quot; where a specific type is correct
+  Pages (4): /contact-us/, /free-quote, /free-quote/, /packaging/
+  Items (5):
+   - form#gform_1 (117-field form, no field sets enterkeyhint) | &lt;form method=&quot;post&quot; enctype=&quot;multipart/form-data&quot; id=&quot;gform_1&quot; action=&quot;/free-quote/#gf_1&quot; data-formid=&quot;1&quot; novalidate=&quot;&quot;&gt; [reason: missing-enterkeyhint, fields: 117]
+   - form#gform_2 (24-field form, no field sets enterkeyhint) | &lt;form method=&quot;post&quot; enctype=&quot;multipart/form-data&quot; id=&quot;gform_2&quot; action=&quot;/packaging/#gf_2&quot; data-formid=&quot;2&quot; novalidate=&quot;&quot;&gt; [reason: missing-enterkeyhint, fields: 24]
+   - form[name=&quot;Contact Form&quot;] (5-field form, no field sets enterkeyhint) | &lt;form class=&quot;elementor-form&quot; method=&quot;post&quot; name=&quot;Contact Form&quot; aria-label=&quot;Contact Form&quot;&gt; [reason: missing-enterkeyhint, fields: 5]
+   - input#input_1_144 (type=&quot;text&quot; where type=&quot;email&quot; is correct) | &lt;input name=&quot;input_144&quot; id=&quot;input_1_144&quot; type=&quot;text&quot; value=&quot;&quot; autocomplete=&quot;new-password&quot;&gt; [reason: wrong-type, actual: text, expected: email]
+   - input#input_1_144 (type=&quot;text&quot; where type=&quot;email&quot; is correct) | &lt;input name=&quot;input_144&quot; id=&quot;input_1_144&quot; type=&quot;text&quot; value=&quot;&quot; autocomplete=&quot;new-password&quot;&gt; [reason: wrong-type, actual: text, expected: email]
+ </rule>
+ <rule id="a11y/link-text" severity="warning" category="Accessibility" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/a11y/link-text">
+  N link(s) with no accessible text; N link(s) with generic text
+  Pages (5/26): /, /, https://www.fsb.org.uk, /about-us/, /additional-services/
+  Items (5/12):
+   - / (empty)
+   - https://linkprotect.cudasvc.com/url?a=http%3a%2f%2 (empty)
+   - https://linkprotect.cudasvc.com/url?a=http%3a%2f%2 (empty)
+   - https://linkprotect.cudasvc.com/url?a=http%3a%2f%2 (empty)
+   - https://linkprotect.cudasvc.com/url?a=https%3a%2f% (empty)
+ </rule>
+ <rule id="mobile/font-size" severity="warning" category="Mobile" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/mobile/font-size">
+  9 element(s) with font-size under 12px
+  Pages (1): /terms-conditions/
+  Items (1):
+   - /terms-conditions/ (9 element(s) with font-size under 12px)
+ </rule>
+ <rule id="url/slug-convention" severity="warning" category="URL Structure" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/url/slug-convention">
+  2 of 20 page(s) deviate from the site&apos;s own URL conventions (slug word separator kebab-case 100%, URL letter case all-lowercase 100%, trailing slash a trailing slash 89%)
+  Pages (2): /free-quote, /self-storage-terms
+  Items (1):
+   - trailing-slash:*:bare (2 of 19 page(s) use no trailing slash but the trailing slash norm is a trailing slash) [dimension: trailing-slash, value: bare, norm: slash, pageCount: 2] (from: /free-quote, /self-storage-terms)
+ </rule>
+ <rule id="ax/token-weight" severity="warning" category="Agent Experience" group="ai" status="warn" docs="https://docs.squirrelscan.com/rules/ax/token-weight">
+  Raw HTML exceeds a generous 100,000-token budget for a single page fetch — too heavy for an agent&apos;s context window; Visible text is under 15% of the page HTML — agents pay token cost mostly for markup, scripts, and styles
+  Pages (5/17): /, /about-us/, /additional-services/, /commercial/, /contact-us/
+  Items (5/31):
+   - / (~108,850 estimated tokens (435,401 bytes))
+   - /additional-services/ (~105,851 estimated tokens (423,402 bytes))
+   - /commercial/ (~107,416 estimated tokens (429,665 bytes))
+   - /courier-delivery/ (~105,053 estimated tokens (420,213 bytes))
+   - /domestic/ (~106,348 estimated tokens (425,393 bytes))
+ </rule>
+</issues>
+</audit>
